@@ -7,11 +7,11 @@
 </template>
 
 <style lang="scss">
+@import 'sass/app';
+
 #app {
+  @apply text-center antialiased;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -19,11 +19,11 @@
   padding: 30px;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    @apply font-bold;
+    color: #42b983;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #2c3e50;
     }
   }
 }
