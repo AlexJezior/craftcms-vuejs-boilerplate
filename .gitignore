@@ -2,3 +2,7 @@
 /.idea
 /vendor
 .DS_Store
+
+# Delete these after forking for your new project.
+/config/project
+/config/license.key
