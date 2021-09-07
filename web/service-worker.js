@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.72a9efda78d83ff47d410f0d0ed3b7b6.js"
+  "/precache-manifest.8f1c2e0df137afc1ab312d377be7233b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "craftcms-vuejs-boilerplate"});

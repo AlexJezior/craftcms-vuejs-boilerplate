@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import store from '@/store'
 
 const routes = [
   {
@@ -21,6 +22,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.path !== from.path) {
+    store.commit('setPageLoadingTrue')
+  }
+
+  next()
 })
 
 export default router
